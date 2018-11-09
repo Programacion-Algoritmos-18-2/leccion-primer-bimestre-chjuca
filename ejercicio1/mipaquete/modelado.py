@@ -13,22 +13,23 @@ class Empleado():								# Creamos la Clase Empleado
 		return	self.comision_fija
 
 	def agregarNombre(self,nombre):				#Funcion da valor nombre el atributo nombre
-		self.nombre=nombre
+		self.nombre = nombre
 
 	def obtenerNombre(self):					#Esta funcion devuelve el atributo nombre
 		return self.nombre
 
 	def agregarApellido(self,apellido):			#Funcion da valor apellido el atributo apellido
-		self.apellido=apellido
+		self.apellido = apellido
 
 	def obtenerApellido(self):					#Esta funcion devuelve el atributo apellido
 		return self.cedula
 
 	def agregarCedula(self,cedula):				#Funcion da valor cedula el atributo cedula
-		self.cedula=cedula
+		self.cedula = cedula
 
 	def obtenerCedula(self):					#Esta funcion devuelve el atributo cedula
 		return self.cedula
+		
 	def presentarDatos(self):
 		cadena="Informacion de %s %s\n\t CEDULA: %s"%(self.obtenerNombre(),self.apellido,self.obtenerCedula())
 		return cadena
